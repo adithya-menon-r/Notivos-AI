@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notivos AI</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img height="50" class="logo" src="assets/logo.png">
+                <h1>Notivos AI</h1>
+            </div>
+            <div class="search-input-container">
+                <input type="text" class="search-input-box" placeholder="Search notes...">
+                <button class="search-button">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </div>
+            <div class="add-sort-container">
+                <button class="add-note-button">
+                    <div class="add-note-button-elements">
+                        <span class="material-symbols-outlined" style="margin-right: 10px;">add</span>
+                        <span>Add New Note</span>
+                    </div>
+                </button>
+                <button class="sort-button" data-text="Sort By">
+                    <span class="material-symbols-outlined">sort</span>
+                </button>
+                <div class="sort-dropdown-menu" role="menu">
+                    <div class="sort-option" data-value="date-desc" role="menuitem">Date (Newest to Oldest)</div>                        
+                    <div class="sort-option" data-value="date-asc" role="menuitem">Date (Oldest to Newest)</div>
+                    <div class="sort-option" data-value="alph-asc" role="menuitem">Title (A-Z)</div>
+                    <div class="sort-option" data-value="alph-desc" role="menuitem">Title (Z-A)</div>
+                </div>
+            </div>
+            <div class="notes-list">
+                <!-- <div class="note-item active">
+                    <div class="note-item-header">
+                        <span class="note-item-title">Untitled Note</span>
+                        <span class="note-item-timestamp"></span>
+                    </div>
+                    <button class="delete-note-button">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div> -->
+            </div>
+        </div>
+        <div class="note-container">
+            <div class="note-default-screen">
+                <span class="material-symbols-outlined">description</span>
+                <span class="select-add-note-text">Select or Add a New Note</span>
+            </div>
+            <div class="note-view">
+                <div class="note-header">
+                    <input class="note-title" type="text" placeholder="Untitled Note">
+                    <div class="tts-elements">
+                        <button class="tts-play-button" style="display: block;">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                        </button>
+                        <button class="tts-pause-button" style="display: none;">
+                            <span class="material-symbols-outlined">pause</span>
+                        </button>
+                        <button class="tts-voices-button">
+                            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                        </button>
+                        <div class="tts-voices-dropdown"></div>
+                    </div>
+                    <button class="ai-button">
+                        <div class="ai-button-elements">
+                            <span class="ai-button-text">Integrated LLM</span>
+                            <span class="material-symbols-outlined">open_in_new</span>
+                        </div>
+                    </button>
+                </div>
+                <textarea class="note-content" placeholder="Type your notes here..."></textarea>
+            </div>
+        </div>
+        <div class="ai-chat-box hidden">
+            <div class="ai-chat-header">
+                <p class="chat-title">Gemini 1.5 Flash</p>
+                <button class="close-chat-button">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="ai-chat-content">
+                <!-- <div class="chat-item request">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, vitae!</span>
+                </div> -->
+                <!-- <div class="chat-item response">
+                    <img src="assets/gemini_logo.png" style="width:25px; height:25px">
+                    <span class="text">
+                        <div class="loading-dot-animation">
+                            <div class="loading-dot" style="--delay: 0.0s"></div>
+                            <div class="loading-dot" style="--delay: 0.1s"></div>
+                            <div class="loading-dot" style="--delay: 0.2s"></div>
+                        </div>
+                    </span>
+                </div> -->
+            </div>
+            <div class="ai-chat-prompt">
+                <textarea class="prompt-box" placeholder="Enter your prompt..."></textarea>
+                <button class="send-chat-button">
+                    <span class="material-symbols-outlined">send</span>
+                </button>
+            </div>
+        </div>
+        <div class="focus-overlay hidden"></div> 
+    </div>
+    <script src="index.js"></script>
+    <script src="text-to-speech.js"></script>
+</body>
+</html>
