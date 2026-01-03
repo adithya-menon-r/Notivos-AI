@@ -65,3 +65,4 @@ This project is licensed under the [MIT LICENSE](LICENSE).
 - [Adithya Menon R](https://www.linkedin.com/in/adithya-menon-r)
 - [Anurup R Krishnan](https://www.linkedin.com/in/anurup-r-krishnan-9877b1289)
 - [Siddharth Ladda](https://www.linkedin.com/in/siddharth-ladda)
+- [Siddhartha Gopala](https://www.linkedin.com/in/siddhartha-gopala-833a0328a)
