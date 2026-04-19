@@ -5,6 +5,8 @@ Notivos AI is a desktop note-taking application developed using Electron.js. It 
 
 Notivos AI was created as a project for the **23CSE113 (User Interface Design)** course.
 
+![image](https://github.com/user-attachments/assets/39054a0f-0e90-4452-875e-f1f7b192dc70")
+
 ## Installation
 1. Download the `Source Code` or Clone the repository:
 
@@ -58,9 +60,12 @@ Notivos-AI/
 ## Conclusion
 Notivos AI simplifies the note-taking process by combining efficient note management with AI-powered assistance. It features text-to-speech functionality and a user-friendly interface, making it easy to create, organize, and access notes. The AI integration with Gemini helps enhance productivity by offering intelligent features.
 
-## License
-This project is licensed under the [MIT LICENSE](LICENSE).
-
 ## Developers
 - [Adithya Menon R](https://www.linkedin.com/in/adithya-menon-r)
 - [Anurup R Krishnan](https://www.linkedin.com/in/anurup-r-krishnan-9877b1289)
+- [G Siddhartha](https://www.linkedin.com/in/siddharthagopala/)
+- [PG Karthikeyan](https://www.linkedin.com/in/karthikeyan-pg-95a5b6291/)
+- [Siddharth Ladda](https://www.linkedin.com/in/siddharth-ladda/)
+
+## License
+This project is licensed under the [MIT LICENSE](LICENSE).
